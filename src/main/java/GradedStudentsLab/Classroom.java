@@ -86,7 +86,7 @@ public class Classroom {
             holdScore = i.getAverageExamScore();
             if (holdScore / highestScore >= .90) {
                 System.out.println(i.getFName() + " " + i.getLName() + " has a score of  " + i.getAverageExamScore() + " and got an A");
-            } else if (holdScore / highestScore > .70) {
+            } else if (holdScore / highestScore > .71) {
                 System.out.println(i.getFName() + " " + i.getLName() + " has a score of  " + i.getAverageExamScore() + " and got a B");
             } else if (holdScore / highestScore > .50) {
                 System.out.println(i.getFName() + " " + i.getLName() + " has a score of  " + i.getAverageExamScore() + " and got a C");
