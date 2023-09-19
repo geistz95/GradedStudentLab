@@ -82,21 +82,19 @@ public class Classroom {
         Student[] sortedList=getStudentListByScore();
         double highestScore=sortedList[0].getAverageExamScore();
         double holdScore;
-        int counter=0;
         for(Student i : sortedList) {
             holdScore = i.getAverageExamScore();
             if (holdScore / highestScore >= .90) {
-                System.out.println(sortedList[counter].getFName() + " " + sortedList[counter].getLName() + " has a score of  " + sortedList[counter].getAverageExamScore() + " and got an A");
+                System.out.println(i.getFName() + " " + i.getLName() + " has a score of  " + i.getAverageExamScore() + " and got an A");
             } else if (holdScore / highestScore > .70) {
-                System.out.println(sortedList[counter].getFName() + " " + sortedList[counter].getLName() + " has a score of  " + sortedList[counter].getAverageExamScore() + " and got a B");
+                System.out.println(i.getFName() + " " + i.getLName() + " has a score of  " + i.getAverageExamScore() + " and got a B");
             } else if (holdScore / highestScore > .50) {
-                System.out.println(sortedList[counter].getFName() + " " + sortedList[counter].getLName() + " has a score of  " + sortedList[counter].getAverageExamScore() + " and got a C");
+                System.out.println(i.getFName() + " " + i.getLName() + " has a score of  " + i.getAverageExamScore() + " and got a C");
             } else if (holdScore / highestScore > .11) {
-                System.out.println(sortedList[counter].getFName() + " " + sortedList[counter].getLName() + " has a score of  " + sortedList[counter].getAverageExamScore() + " and got a D");
+                System.out.println(i.getFName() + " " + i.getLName() + " has a score of  " + i.getAverageExamScore() + " and got a D");
             } else {
-                System.out.println(sortedList[counter].getFName() + " " + sortedList[counter].getLName() + " has a score of  " + sortedList[counter].getAverageExamScore() + " and got an F");
+                System.out.println(i.getFName() + " " + i.getLName() + " has a score of  " + i.getAverageExamScore() + " and got an F");
             }
-            counter++;
         }
     }
 
